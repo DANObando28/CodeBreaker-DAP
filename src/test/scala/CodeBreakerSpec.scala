@@ -27,7 +27,7 @@ class CodeBreakerSpec extends FunSuite with DiagrammedAssertions {
     // arrange
 		breaker = new CodeBreaker(Array(1, 2, 3, 4))
 		// act
-		val result: String = breaker.gest(Array(1, 0, 0, 0))
+		val result: String = breaker.gest(Array(9, 0, 0, 0))
 		// assert
 		assert("x" equals result)
   }
